@@ -1,0 +1,79 @@
+body {
+    background-image: linear-gradient(90deg, rgba(65, 185, 131, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#tela {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+    position: absolute;
+    display: none;
+    text-align: center;
+    padding-top: 200px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    z-index: 1;
+}
+
+.botao {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+.botao:hover {
+    background-color: #064b09;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 270px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: teal;
+    border: 3px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.fundo {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.celula {
+    width: 80px;
+    height: 70px;
+    font-size: 30pt;
+    margin: 4px 2px;
+    font-weight: 300;
+    padding-top: 10px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: cadetblue;
+}
+
