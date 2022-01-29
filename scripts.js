@@ -24,10 +24,12 @@ document.addEventListener("click", (event) => {
 
 function jogar(id) {
     const celula = document.getElementById(id);
-    turno = checarTurno ? jogador_x : jogador_y;
-    celula.classList.add(turno);
-    celula.textContent = turno;
-    verificarVencedor(turno);
+    if(!celula.classList.contains(jogador_x) && !celula.classList.contains(jogador_y)) {
+        turno = checarTurno ? jogador_x : jogador_y;
+        celula.classList.add(turno);
+        celula.textContent = turno;
+        verificarVencedor(turno);
+    }
 }
 
 function verificarVencedor(turno) {
@@ -91,6 +93,6 @@ function fimPartida (vencedor = null) {
 }
 
 function redirecionar() {
-    window.location.replace("file:///C:/xampp/htdocs/JogodaVelha/index.html");
+    window.location = "index.html";
 }
 
